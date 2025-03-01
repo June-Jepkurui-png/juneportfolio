@@ -1,31 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import movie_loom from "../assets/movie-loom.png";
-import quick_rent from "../assets/quick-rent.png";
-import blog_verse from "../assets/blogverse.png";
-import chit_chat from "../assets/chit-chat.png";
-import Liquor_shop from "../assets/liquor_shop.png";
-import hotelhub from "../assets/hotelhub.png";
-import home_renting from "../assets/home_rental.png";
-import elegance from '../assets/sallon.png'
-import eventify from '../assets/eventify.png'
+import Selling_Apartments from "../assets/sellingapartments.png"; // Updated import
+import Tender_hands from "../assets/tenderhands.png"; // Updated import
+import bank_of_Flatiron from "../assets/bankofflatiron.png"; // Updated import
+
 import React from "react";
 
 const Projects = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const projects = [
-    { title: "Eventify ", image: eventify, link: "https://eventify-eight-phi.vercel.app/" },
-    { title: "Elegance Sallon Shop", image: elegance, link: "https://elegance-sallon-shop.vercel.app/" },
-    { title: "Movie-Loom Website", image: movie_loom, link: "https://movie-loom-client.onrender.com/" },
-
-    { title: "Quick-Rent Renting Platform", image: quick_rent, link: "http://renting-platform-frontend.vercel.app/" },
-    { title: "Chit-Chat Chatting Web App", image: chit_chat, link: "https://chit-chat-1jwq.onrender.com/" },
-    { title: "Liquor Shop Frontend", image: Liquor_shop, link: "https://liquor-shop-eight.vercel.app/" },
-    { title: "Hotel Hub", image: hotelhub, link: "https://hotel-hub-sepia.vercel.app/" },
-
-    { title: "Home Renting Platform", image: home_renting, link: "https://home-rental-platform-eta.vercel.app/" },
-    { title: "Coming Soon", image: blog_verse },
+    { title: "Selling-Apartments ", image: Selling_Apartments , link: "https://selling-apartments.vercel.app/" },
+    { title: "Tender-hands", image: Tender_hands, link: "https://tender-hands.vercel.app/" },
+    { title: "bank-of-Flatiron", image: bank_of_Flatiron, link: "https://bank-of-flatiron-seven-pied.vercel.app/" }
   ];
 
   return (

@@ -5,7 +5,7 @@ import { inView, motion } from 'framer-motion'
 const experiences = [
     {
         title: 'Frontend Development',
-        description: 'Building responsive and interactive user interfaces for US based client',
+        description: 'Building responsive and interactive user interfaces using modern web technologies',
         icon: Code2,
         color: 'bg-blue-500'
     }

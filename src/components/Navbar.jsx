@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import React from 'react';
-import { resumeUrl } from '../common.jsx/common';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +11,6 @@ const Navbar = () => {
     { name: 'Skills', to: 'skills' },
     { name: 'Projects', to: 'projects' },
     { name: 'Contact', to: 'contact' },
-    { name: 'Resume', to: resumeUrl, download: 'Resume' },
   ];
 
   return (
@@ -39,20 +37,14 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {item.download ? (
-                  <a href={item.to} download={item.download} className="text-textSecondary hover:text-secondary">
-                    {item.name}
-                  </a>
-                ) : (
-                  <Link
-                    to={item.to}
-                    smooth={true}
-                    duration={500}
-                    className="text-textSecondary hover:text-secondary hover:scale-110 cursor-pointer"
-                  >
-                    {item.name}
-                  </Link>
-                )}
+                <Link
+                  to={item.to}
+                  smooth={true}
+                  duration={500}
+                  className="text-textSecondary hover:text-secondary hover:scale-110 cursor-pointer"
+                >
+                  {item.name}
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -90,20 +82,14 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  {item.download ? (
-                    <a href={item.to} download={item.download} className="text-textSecondary hover:text-secondary">
-                      {item.name}
-                    </a>
-                  ) : (
-                    <Link
-                      to={item.to}
-                      smooth={true}
-                      duration={500}
-                      className="text-textSecondary hover:text-secondary cursor-pointer hover:scale-105"
-                    >
-                      {item.name}
-                    </Link>
-                  )}
+                  <Link
+                    to={item.to}
+                    smooth={true}
+                    duration={500}
+                    className="text-textSecondary hover:text-secondary cursor-pointer hover:scale-105"
+                  >
+                    {item.name}
+                  </Link>
                 </motion.div>
               ))}
             </div>

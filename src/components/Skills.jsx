@@ -1,13 +1,9 @@
 import { FaReact, FaNodeJs, FaDatabase, FaDocker } from "react-icons/fa";
 import {
-  SiExpress,
-  SiMongodb,
   SiJavascript,
   SiMysql,
   SiPostgresql,
-  SiRedis,
   SiPostman,
-  SiTypescript,
 } from "react-icons/si";
 import React from "react";
 
@@ -15,8 +11,6 @@ const Skills = () => {
   const skillsRow1 = [
     { name: "React", icon: FaReact, color: "#61DAFB" },
     { name: "Node.js", icon: FaNodeJs, color: "#339933" },
-    { name: "Express.js", icon: SiExpress, color: "#000000" },
-    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     { name: "REST APIs", icon: FaDatabase, color: "#FF6B6B" },
     { name: "Javascript", icon: SiJavascript, color: "#f7df1e" },
   ];
@@ -24,10 +18,7 @@ const Skills = () => {
   const skillsRow2 = [
     { name: "MySql", icon: SiMysql, color: "#f29111" },
     { name: "Postgres", icon: SiPostgresql, color: "#0064a5" },
-    { name: "Redis", icon: SiRedis, color: "#7A0C00" },
     { name: "Postman", icon: SiPostman, color: "#EF5B25" },
-    { name: "Docker", icon: FaDocker, color: "#0db7ed" },
-    { name: "Typescript", icon: SiTypescript, color: "#007acc" },
   ];
 
   const renderSkills = (skills) =>
