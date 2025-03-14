@@ -26,7 +26,6 @@ const Contact = () => {
         </motion.a>
         <div className="mt-16 flex justify-center space-x-8">
           <motion.a
-            href="https://github.com/June-Jepkurui-png"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -5 }}
